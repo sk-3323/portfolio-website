@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/image.png";
-import rmtdevImg from "@/public/bookstore.png";
-import wordanalyticsImg from "@/public/ans.png";
+// import corpcommentImg from "@/public/image.png";
+// import rmtdevImg from "@/public/bookstore.png";
+// import wordanalyticsImg from "@/public/ans.png";
 
 export const links = [
   {
@@ -59,7 +59,8 @@ export const projectsData = [
     description:
       "A responsive e-learning platform with efficientdata management, and implemented secure role-based authentication for Admins, Instructors, and Students.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    imageUrl:
+      "http://res.cloudinary.com/dlh3tav1v/image/upload/v1744829956/academix-cloudinary-mongodb/image_tuhtw8.png",
     url: "https://academix-learning.netlify.app/",
   },
 
@@ -68,7 +69,8 @@ export const projectsData = [
     description:
       "A basic web application built using the MERN stack. The app features a responsive UI for easy navigation, and a RESTful API for smooth data handling between the frontend and backend.",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Daisy UI", "Redux"],
-    imageUrl: rmtdevImg,
+    imageUrl:
+      "http://res.cloudinary.com/dlh3tav1v/image/upload/v1744830164/academix-cloudinary-mongodb/bookstore_frbkbm.png",
     url: "https://github.com/sk-3323/BookStore/tree/master",
   },
   {
@@ -84,7 +86,8 @@ export const projectsData = [
       "Tailwind",
       "Redux",
     ],
-    imageUrl: wordanalyticsImg,
+    imageUrl:
+      "http://res.cloudinary.com/dlh3tav1v/image/upload/v1744830202/academix-cloudinary-mongodb/ans_otkkca.png",
     url: "",
   },
 ] as const;

@@ -50,7 +50,7 @@ export default function Project({
           </ul>
         </div>
         <Link href={url}>
-          <Image
+          <img
             src={imageUrl}
             alt="Project I worked on"
             quality={95}
