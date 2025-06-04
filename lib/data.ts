@@ -1,7 +1,8 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { CgLaptop } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
+
 // import corpcommentImg from "@/public/image.png";
 // import rmtdevImg from "@/public/bookstore.png";
 // import wordanalyticsImg from "@/public/ans.png";
@@ -36,20 +37,28 @@ export const links = [
 export const experiencesData = [
   {
     title: "Bachelor of Computer Applications",
-    location:
-      "C B Patel Computer College | Veer Narmad South Gujarat University",
+    location: `@C B Patel Computer College | Veer Narmad South Gujarat University`,
     description:
       "Pursuing Bachelor of Computer Applications (BCA) at C.B. Patel College, gaining strong foundational knowledge in software development, databases, data structures, and web technologies through real-world projects.",
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(LuGraduationCap),
     date: "2022 - 2025",
   },
   {
     title: "MERN Stack Developer Internship",
-    location: "ANS IT INDIA PVT LTD",
+    location: "@ANS IT INDIA PVT LTD",
     description:
       "Gained hands-on industry experience while pursuing BCA, contributing to real-world web development projects using the MERN stack. Balanced academic learning with practical implementation, building scalable applications, collaborating in teams, and continuously enhancing technical and problem-solving skills.",
-    icon: React.createElement(LuGraduationCap),
-    date: "Nov 2024 - Present",
+    icon: React.createElement(CgLaptop),
+    date: "Nov 2024 - Apr 2025",
+  },
+  {
+    title: "MERN Stack Developer",
+    location: "@Par Solution",
+    description:
+      "Built and optimized scalable backend systems using Node.js and Next.js. Worked on advanced backend concepts like job queues, caching, server scaling, and role-based access control (RBAC). Also implemented efficient API design, authentication flows, and performance tuning to support production-level apps.",
+    icon: React.createElement(CgWorkAlt),
+
+    date: "May 2025 - Present",
   },
 ] as const;
 
@@ -93,17 +102,17 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
   "JavaScript",
   "TypeScript",
-  "React",
+  "React.js",
   "Next.js",
   "Node.js",
-  "Git",
+  "Socket.io",
   "Tailwind",
   "Prisma",
   "MongoDB",
   "Redux",
   "Express",
+  "Redis",
+  "Docker",
 ] as const;

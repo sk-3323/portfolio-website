@@ -10,7 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
-
+import { IoLocationOutline } from "react-icons/io5";
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
   const { theme } = useTheme();
@@ -45,7 +45,10 @@ export default function Experience() {
               }}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
+              <p className="font-normal !mt-0 flex items-center">
+                {/* <IoLocationOutline /> */}
+                {item.location}
+              </p>
               <p className="font-normal !mt-0">
                 {index === 0 && "CGPA - 8.46/10.00"}
               </p>
