@@ -220,13 +220,13 @@ export default function SkillsSection() {
             <motion.div
               key={i}
               initial={{
-                x: Math.random() * window.innerWidth,
-                y: Math.random() * window.innerHeight,
+                x: Math.random() * window?.innerWidth,
+                y: Math.random() * window?.innerHeight,
                 opacity: 0,
               }}
               animate={{
-                x: Math.random() * window.innerWidth,
-                y: Math.random() * window.innerHeight,
+                x: Math.random() * window?.innerWidth,
+                y: Math.random() * window?.innerHeight,
                 opacity: [0, 0.1, 0],
               }}
               transition={{
