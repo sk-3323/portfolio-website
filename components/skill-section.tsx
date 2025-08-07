@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
 const skillsData = [
   "JavaScript",
   "TypeScript",
@@ -17,7 +16,11 @@ const skillsData = [
   "Express",
   "Redis",
   "Docker",
-  "nginx",
+  "Nginx",
+  "Langchain",
+  "Postgresql",
+  "Supabase",
+  "n8n",
 ] as const;
 export const skillLogos = {
   JavaScript:
@@ -43,8 +46,15 @@ export const skillLogos = {
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
   Docker:
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-  nginx:
+  Nginx:
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
+  Langchain:
+    "https://images.contentstack.io/v3/assets/bltf2fca5bf44f5e817/blt34d9fdb635976e4a/669e80a79fecd86c50d59f6d/Lang_Square.png",
+  Postgresql:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg",
+  Supabase:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+  n8n: "https://miro.medium.com/v2/resize:fit:1155/0*G-5F38rBStjlMNwd.png",
 };
 
 // Technology colors for better visual appeal
@@ -62,7 +72,11 @@ const skillColors = {
   Express: "bg-gray-700",
   Redis: "bg-red-600",
   Docker: "bg-blue-500",
-  nginx: "bg-green-700",
+  Nginx: "bg-green-700",
+  Langchain: "bg-green-500",
+  Postgresql: "bg-blue-400",
+  Supabase: "bg-green-400",
+  n8n: "bg-red-300",
 };
 
 const container = {
@@ -80,9 +94,6 @@ const item = {
   show: { opacity: 1, y: 0 },
 };
 
-for (const key in skillLogos) {
-  console.log(key, skillLogos[key]);
-}
 export default function SkillsSection() {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
 
